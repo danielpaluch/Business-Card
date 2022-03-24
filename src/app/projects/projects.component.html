@@ -1,0 +1,26 @@
+<div class="main">
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let project of projects">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{project.title}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{project.description}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>{{project.content}}</p>
+        <mat-action-row *ngIf="project.done==true; else notDone">
+            <a href="{{project.url}}" target="_blank">
+            <button mat-flat-button color="primary">Try Yourself!</button>
+            </a>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>  
+</div>
+<ng-template #notDone>
+    <mat-action-row>
+        <button mat-flat-button color="primary" disabled>In progress!</button>
+    </mat-action-row>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-template>

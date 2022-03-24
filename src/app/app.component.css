@@ -1,0 +1,17 @@
+mat-toolbar{
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+mat-toolbar .myName{
+    font-size: larger;
+}
+.nav-right{
+    float: right;
+}
+.nav-right span{
+    padding-right: 3rem;
+}

@@ -1,0 +1,28 @@
+<div class="main">
+    <mat-card class="introduce">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <h1><b>Hello!</b></h1>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{textIntroduction}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+    <div class="aims">
+        <h1><b>My Aims</b></h1>
+        <mat-card *ngFor="let card of MyAims">
+            <mat-card-title>
+                <p>
+                    {{card.title}}
+                </p>
+            </mat-card-title>
+            <mat-card-content>
+                <p>
+                    {{card.content}}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
