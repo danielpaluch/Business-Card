@@ -25,3 +25,10 @@ mat-panel-description{
 button{
     display: block;
 }
+
+@media screen and (max-width:768px) {
+    .mat-expansion-panel-header{
+        min-height: 48px;
+        height: auto;
+      }
+}
