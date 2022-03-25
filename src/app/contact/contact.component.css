@@ -1,3 +1,80 @@
-p{
+.main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     margin-top: 5rem;
+}
+.first, .third{
+    width: 66%;
+    height: 200px;
+}
+.second, .fourth{
+    width: 33%;
+}
+.third, .fourth{
+    margin-top: 2rem;
+}
+.first{
+    display: flex;
+    align-items: center;
+}
+.first mat-card, .third .example-form{
+    margin: 5%;
+}
+.first p{
+    text-align: justify;
+    font-weight: 500;
+}
+
+.second button{
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 50px;
+}
+.example-form {
+    width: 100%;
+  }
+.topic {
+    width: 50%;
+  }
+.content{
+    width: 80%;
+}
+.sub{
+    display: block;
+    background-color: #3f51b5;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%);
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .first, .second, .third, .fourth{
+        width: 100%;
+        margin: 5%;
+      }
+    .second button{
+        height: inherit;
+    }
 }
