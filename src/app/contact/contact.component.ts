@@ -16,12 +16,6 @@ export interface Tile {
 export class ContactComponent implements OnInit {
   
   constructor() { }
-
-  color1 = 'red';
-  color2 = 'green';
-  color3 = 'blue';
-
-
   ngOnInit(): void {
   }
 

@@ -5,11 +5,10 @@
     margin-top: 5rem;
 }
 .first, .third{
-    width: 66%;
-    height: 200px;
+    width: 60%;
 }
 .second, .fourth{
-    width: 33%;
+    width: 30%;
 }
 .third, .fourth{
     margin-top: 2rem;
@@ -18,14 +17,13 @@
     display: flex;
     align-items: center;
 }
-.first mat-card, .third .example-form{
+.first mat-card, .third form, .second, .fourth{
     margin: 5%;
 }
 .first p{
     text-align: justify;
     font-weight: 500;
 }
-
 .second button{
     top: 50%;
     transform: translate(0, -50%);
@@ -76,5 +74,8 @@ a{
       }
     .second button{
         height: inherit;
+    }
+    .second{
+        padding: 5%;
     }
 }
