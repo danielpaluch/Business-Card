@@ -20,9 +20,9 @@ export class ProjectsComponent implements OnInit {
     {
       title: "To-do list",
       description: "To-do list with udemy tutorial.",
-      content: "It\'s my introduction to Angular. By the perspective of time I have to reorganise this project into new one. Add new stylings with Material UI and rebuild whole code.",
+      content: "It\'s simplic todo list. Made with Material UI. In future it will base on database.",
       done: true,
-      url: "https://github.com/danielpaluch/Angular_ListaZadan"
+      url: "https://github.com/danielpaluch/Angular_TodoList"
     },
     {
       title: "TicTacToe",
