@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: "To-do list",
-      description: "Angular.",
+      description: "Angular",
       content: "It\'s simple todo list. Made with Material UI. In future it will base on database.",
       done: true,
       url: "https://github.com/danielpaluch/Angular_TodoList"
@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: "Blog with Log-In",
-      description: "Angular, Firebase.",
+      description: "Angular, Firebase",
       content: "It\'s not done yet. I\'m still working on it, while learning databases and how to make users their own accounts.",
       done: false,
     },
