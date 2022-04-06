@@ -1,25 +1,15 @@
-<mat-toolbar color="primary">
-  <section class="myName">
-    Daniel Paluch
-  </section>
-  <section class="nav-right">
-    <div *ngIf="width==false; else lowerWidth">
+<div class="page-wrapper">
+  <div class="sticky-header">
+      <app-header></app-header>   
+  </div>
+  <div class="content-wrapper">
+      <div class="content">
+        <router-outlet>
+        </router-outlet>
+      </div>
+      <div class="footer">
+          <app-footer></app-footer>  
+      </div>
+  </div>
+</div>
 
-    <span><a mat-button routerLink="/aboutme">About Me</a></span>
-    <span><a mat-button routerLink="/projects">Projects</a></span>
-    <span><a mat-button routerLink="/contact">Contact</a></span>
-          
-    </div>
-  </section>
-</mat-toolbar>
-<mat-grid-list cols="2" rowHeight="100px">
-
-<ng-template #lowerWidth>
-  <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item><a mat-button routerLink="/aboutme">About Me</a></button>
-  <button mat-menu-item><a mat-button routerLink="/projects">Projects</a></button>
-  <button mat-menu-item><a mat-button routerLink="/contact">Contact</a></button>
-</mat-menu>
-</ng-template>
-<router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    background: #3f51b5;
+    color: #fff;
+    justify-content: right;
+}
+.mat-list-base .mat-list-item{
+    font-size: 13px;
+    font-weight: 500;
+    height: 45px;   
+}
+.btn{
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    padding: 0px;
+}

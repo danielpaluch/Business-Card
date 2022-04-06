@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 .first, .third{
     width: 60%;
